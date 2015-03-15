@@ -1,0 +1,27 @@
+# have to look exactly like this: capital letter
+# no plural
+# spaces count
+# types
+
+
+Material:
+  name: string
+
+User:
+  name: string
+  company_fed_code: double
+  address: string
+  zip_code: string
+  email: string
+  password: string
+  telephone: string
+  number_of_employees: integer
+  company_type: string
+
+Transaction:
+  tax_receipt: double
+  buyer_user_id: integer
+  seller_user_id: integer
+  tonnage: double
+  material_id: integer
+  price: double

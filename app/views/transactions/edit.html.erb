@@ -1,0 +1,7 @@
+<%= form_for @transaction do |form| %>
+  <div class="form-group">
+    <%= form.label :tax_receipt %>
+    <%= form.text_field :tax_receipt, class: "form-control" %>
+  </div>
+  <%= form.button 'Update transaction', class: "btn btn-success" %>
+<% end %>

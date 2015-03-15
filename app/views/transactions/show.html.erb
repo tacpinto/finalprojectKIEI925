@@ -1,0 +1,17 @@
+<h1>
+	Transaction Receipt #
+	<%= @transaction.tax_receipt %>
+</h1>
+
+<h3>
+
+This website certificates that
+<%= @buyer.name %> 
+has bought from 
+<%= @seller.name%> 
+<%= @transaction.tonnage %>kg of 
+<%= @material.name %>
+for
+$<%= @transaction.price %>/kg
+
+</h3>	

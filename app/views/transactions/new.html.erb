@@ -1,0 +1,19 @@
+<!--  
+<form action="/transactions" method="POST">
+
+
+  <div class="form-group">
+    <label for="name">Type the tax receipt</label>
+    <input type="text" class="form-control" id="tax_receipt" placeholder="Enter the tax_receipt number">
+  </div>
+
+</form>
+-->
+
+<%= form_for @transaction do |form| %>
+  <div class="form-group">
+    <%= form.label :tax_receipt %>
+    <%= form.text_field :tax_receipt, class: "form-control" %>
+  </div>
+  <%= form.button 'Create transaction', class: "btn btn-success" %>
+<% end %>
